@@ -103,7 +103,7 @@ img.scaleimg {
 }
 
 .pattern {
-	background: url(../images/pattern.png);
+	/* background: url(../images/pattern.png); */
 	width: 100%;
 	position: absolute;
 }	
@@ -393,7 +393,7 @@ Parallax
 	/*Parallax2------------------------------------------*/
 	
 	.bg2 {
-		background: url(../images/parallax/GOPR6330.jpg) top center fixed repeat-y;
+		background: url(../images/parallax/teaser2.jpg) top center fixed repeat-y;
 		width: 100%;
 		height: 100%;
 		margin: 0 auto;
@@ -417,13 +417,8 @@ Parallax
 	
 	}
 	
-	.tweet-date {
-		display: block;
-		margin-top: 20px;
-		margin-bottom: 10px;
-	}
-	
-	.tweet-date a {
+	.twitter-date {
+		color: #868991;
 		font-size: 11px;
 		text-transform: uppercase;
 		font-weight: 600;
@@ -438,7 +433,7 @@ Parallax
 	}
 	
 	.bg3 {
-		background: url(../images/slider/banner14.jpeg) 100% 100% fixed repeat-y;
+		background: url(../images/slider/banner4.jpeg) 50% 50% fixed repeat-y;
 		width: 100%;
 		height: 100%;
 		margin: 0 auto;
@@ -471,7 +466,11 @@ Content
 	padding-top: 64px;
 	padding-bottom: 80px;
 	position: relative;
-	background: white;
+	/* background: white; */
+	background: linear-gradient( 
+		0deg
+		 ,#000000 8%,#292929 89%);
+		 color: #ffb400;
 }
 
 .one-text {
@@ -518,7 +517,7 @@ Content
 	/*Homepage------------------------------------------*/
 	
 	#homepage {
-		background: url(../images/pattern.png);
+		/* background: url(../images/pattern.png); */
 		position: relative;
 		overflow: hidden;
 		height: 100%;
@@ -610,7 +609,7 @@ Content
 	/*Culrute------------------------------------------*/
 
 	.full-width {
-		background: #f0f2f5;
+		/* background: #f0f2f5; */
 		padding: 60px 0px 60px 0px;
 		margin: 53px 0px 54px 0px;
 	}
@@ -634,7 +633,7 @@ Content
 		-webkit-border-radius: 160px;
 		-moz-border-radius: 160px;
 		margin: 24px auto 24px auto;
-		background: #f0f2f5 center center no-repeat;
+		background: black center center no-repeat;
 	}
 	
 	
@@ -774,7 +773,7 @@ Content
 
 	/*Contact------------------------------------------*/
 
-	#contact {
+	#submit-form {
 		width: 100%;
 		height: auto;
 		min-height: 100%;
@@ -1641,4 +1640,3 @@ Shortcodes
 	    border-top: 7px solid #1c1f26;
 	    bottom: -5px;
 	    left: 40%;
-	}

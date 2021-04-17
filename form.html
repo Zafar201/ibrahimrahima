@@ -8,6 +8,8 @@
 
 	<!-- Google Web Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 	
 	<!-- CSS Responsive Framework Skeleton -->
 	<link rel="stylesheet" href="css/skeleton.css">
@@ -20,13 +22,13 @@
 
 </head>
 
-<body>
+<body >
 	
 	<div class="container" style="margin-top:60px;">
 		
 		<div class="ten columns">
-			<p><a href="index.html">← Back to template</a></p>
-			<h1>Form and Buttons</h1>
+			<p><a href="index.html">← Back to Home</a></p>
+			<!-- <h1>Form and Buttons</h1>
 			<form>
 				<label>Input</label>
 				<input type="text">
@@ -42,8 +44,52 @@
 			<br>
 			<br>
 			<a class="large button" href="#">Large Button</a>			
-		</div>	
+		</div>	 -->
 							
 	</div>
+
+	<div class="lines tab-content">
+		<div class="result"></div>
+		
+		<form  id="submitt-form"   action="" class="well">
+			<div class="row">
+				<div class="span2 pull-left">
+					<input type="text" name="Name" placeholder="Name">
+					<input type="text" name="Email" placeholder="E-mail">
+					<input type="text" name="Subject" placeholder="Subject">
+					<!-- <textarea class="span6" rows="4" name="message" placeholder="Message"></textarea>
+					<button type="submit">Submit</button> -->
+				</div>
+				<div class="span6 pull-right">
+					<textarea class="span6" rows="4" name="message" placeholder="Message"></textarea>
+					<button type="submit" class="button"><i class="icon-envelope-alt"></i> Send Message</button>
+				</div>
+
+			
+			</div>
+		</form>
+	</div>
+
+
+	<script>
+		$("#submitt-form").submit((e)=>{
+			e.preventDefault()
+			$.ajax({
+				url:"https://script.google.com/macros/s/AKfycbz5aLoBcopOf_6SD4ipUbaw4R8Wt-5pGg4L1gUFBHGVnTT8lb6FhkW2x_KCQU2UwpkIyQ/exec",
+				data:$("#submitt-form").serialize(),
+				method:"post",
+				success:function (response){
+					alert("Form submitted successfully")
+					window.location.reload()
+					//window.location.href="https://google.com"
+				},
+				error:function (err){
+					alert(err)
+	
+				}
+			})
+		})
+	
+	</script>
 
 </body>

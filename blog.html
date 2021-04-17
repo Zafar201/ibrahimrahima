@@ -231,9 +231,7 @@
 						</ul>
 					</div>
 					
-					<div id="twitterfeed" class="block"><a class="twitter-timeline" href="https://twitter.com/envato" data-widget-id="347631015214317568">Tweets by @envato</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</div>
+					<div id="twitterfeed" class="block"></div>
 					
 				</div>
 				
@@ -318,6 +316,7 @@
 	<script src="js/supersized.images.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/jquery.parallax-1.1.3.js"></script>
+	<script src="js/last-tw-blog.js"></script>
 	<script src="js/paralax-ini.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/jquery.flexslider.js"></script>
@@ -460,7 +459,8 @@
 			});
 		});
 	</script>
-
+	
+	<script src="https://api.twitter.com/1/statuses/user_timeline/envato.json?callback=twitterCallback2&count=3"></script>
 		
 </body>
 <!-- The End. Visit our site THEMES.TVDA.EU -->
